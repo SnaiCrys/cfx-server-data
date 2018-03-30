@@ -31,12 +31,12 @@ em {
 
 .chat-window {
   position: absolute;
-  top: 15px;
-  left: 15px;
+  top: 55px;
+  left: 6px;
   width: 38%;
   height: 240px;
 
-  background-color: rgba(52, 73, 94, 0.7);
+  background-color: rgba(52, 73, 94, 0.00);
   -webkit-animation-duration: 2s;
 }
 
@@ -44,7 +44,7 @@ em {
 .chat-messages {
   position: relative;
   height: 95%;
-  font-size: 1.2rem;
+  font-size: 1.0rem;
   margin: 10px;
 
   overflow-x: hidden;
@@ -76,7 +76,7 @@ textarea {
   padding: 5px;
   padding-left: 27px;
   color: white;
-  background-color: rgba(44, 62, 80, 1.0);
+  background-color: rgba(44, 62, 80, 0.45);
   width: 100%;
   border-width: 0;
   height: 34px;
