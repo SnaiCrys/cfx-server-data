@@ -34,16 +34,16 @@ AddEventHandler('__cfx_internal:commandFallback', function(command)
 end)
 
 -- player join messages
-AddEventHandler('chat:init', function()
+--[[AddEventHandler('playerConnecting', function()
     TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) .. ' joined.')
 end)
 
 AddEventHandler('playerDropped', function(reason)
     TriggerClientEvent('chatMessage', -1, '', { 255, 255, 255 }, '^2* ' .. GetPlayerName(source) ..' left (' .. reason .. ')')
-end)
+end)]]
 
 RegisterCommand('say', function(source, args, rawCommand)
-    TriggerClientEvent('chatMessage', -1, (source == 0) and 'console' or GetPlayerName(source), { 255, 255, 255 }, rawCommand:sub(5))
+    TriggerClientEvent('chatMessage', -1, (source == 0) and 'Kandidat' or GetPlayerName(source), { 255, 255, 255 }, rawCommand:sub(5))
 end)
 
 -- command suggestions for clients
